@@ -6,7 +6,7 @@
 #    By: carloga2 <carloga2@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/17 16:33:12 by carloga2          #+#    #+#              #
-#    Updated: 2025/05/17 20:08:55 by carloga2         ###   ########.fr        #
+#    Updated: 2025/05/17 20:23:54 by carloga2         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,13 @@ RM = rm -f
 # Source files
 SRCS = ft_printf.c \
 	   ft_format_char.c \
+	   ft_format_string.c \
+	   ft_format_pointer.c \
+	   ft_format_integer.c \
+	   ft_format_unsigned.c \
+	   ft_format_hex_lower.c \
+	   ft_format_hex_upper.c \
+	   ft_format_percent.c \
 		
 
 # Object files

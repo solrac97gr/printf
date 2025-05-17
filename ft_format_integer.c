@@ -1,20 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_format_char.c                                   :+:      :+:    :+:   */
+/*   ft_format_integer.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: carloga2 <carloga2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 20:04:46 by carloga2          #+#    #+#             */
-/*   Updated: 2025/05/17 20:54:16 by carloga2         ###   ########.fr       */
+/*   Updated: 2025/05/17 20:25:17 by carloga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	format_char(va_list *args)
+static int	put_nbr(long n)
 {
-	char c = va_arg(*args,	int);
+	int		count;
+	char	c;
+
+	count = 0;
+	if (n < 0)
+	{
+		c = '-';
+		put_char(&c);
+		count++;
+		n = -n;
+	}
+	if (n >= 10)
+		count += put_nbr(n / 10);
+	c = (n % 10) + '0';
 	put_char(&c);
-	return (1);
+	count++;
+	return (count);
+}
+
+int	format_integer(va_list *args)
+{
+	int	n;
+
+	n = va_arg(*args, int);
+	return (put_nbr(n));
 }
