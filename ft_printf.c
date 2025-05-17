@@ -6,7 +6,7 @@
 /*   By: carloga2 <carloga2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 18:22:39 by carloga2          #+#    #+#             */
-/*   Updated: 2025/05/17 21:04:34 by carloga2         ###   ########.fr       */
+/*   Updated: 2025/05/17 21:23:06 by carloga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ int	ft_printf(char const *format, ...)
 		}
 		else
 		{
-			put_char(&format[i]);
+			ft_put_char(&format[i]);
 			count++;
 		}
 		i++;

@@ -1,23 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_format_percent.c                                :+:      :+:    :+:   */
+/*   ft_put_char.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: carloga2 <carloga2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/17 20:04:46 by carloga2          #+#    #+#             */
-/*   Updated: 2025/05/17 21:24:55 by carloga2         ###   ########.fr       */
+/*   Created: 2025/05/17 21:19:30 by carloga2          #+#    #+#             */
+/*   Updated: 2025/05/17 21:20:32 by carloga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include <unistd.h>
 
-int	format_percent(va_list *args)
+void	ft_put_char(const char *c)
 {
-	char	c;
-
-	(void)args;
-	c = '%';
-	ft_put_char(&c);
-	return (1);
+	write(1, c, 1);
 }

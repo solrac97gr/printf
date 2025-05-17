@@ -6,7 +6,7 @@
 /*   By: carloga2 <carloga2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 20:04:46 by carloga2          #+#    #+#             */
-/*   Updated: 2025/05/17 20:25:28 by carloga2         ###   ########.fr       */
+/*   Updated: 2025/05/17 21:23:57 by carloga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	format_string(va_list *args)
 		str = "(null)";
 	while (*str)
 	{
-		put_char(str);
+		ft_put_char(str);
 		str++;
 		count++;
 	}

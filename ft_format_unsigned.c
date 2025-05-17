@@ -6,7 +6,7 @@
 /*   By: carloga2 <carloga2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 20:04:46 by carloga2          #+#    #+#             */
-/*   Updated: 2025/05/17 20:25:32 by carloga2         ###   ########.fr       */
+/*   Updated: 2025/05/17 21:24:32 by carloga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static int	put_unsigned(unsigned int n)
 	if (n >= 10)
 		count += put_unsigned(n / 10);
 	c = (n % 10) + '0';
-	put_char(&c);
+	ft_put_char(&c);
 	count++;
 	return (count);
 }

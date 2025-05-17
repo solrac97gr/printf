@@ -6,7 +6,7 @@
 /*   By: carloga2 <carloga2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 20:04:46 by carloga2          #+#    #+#             */
-/*   Updated: 2025/05/17 20:25:14 by carloga2         ###   ########.fr       */
+/*   Updated: 2025/05/17 21:24:48 by carloga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static int	put_hex_upper(unsigned int n)
 		c = (n % 16) + '0';
 	else
 		c = (n % 16) - 10 + 'A';
-	put_char(&c);
+	ft_put_char(&c);
 	count++;
 	return (count);
 }
