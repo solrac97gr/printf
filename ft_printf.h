@@ -1,21 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printf.h                                           :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: carloga2 <carloga2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 18:22:56 by carloga2          #+#    #+#             */
-/*   Updated: 2025/05/17 18:28:16 by carloga2         ###   ########.fr       */
+/*   Updated: 2025/05/17 18:35:21 by carloga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
-
 #include <stdarg.h>
 
-
-int ft_printf(char const *format, ...);
-
-#endif
+int	ft_printf(char const *format, ...);

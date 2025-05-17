@@ -6,19 +6,21 @@
 /*   By: carloga2 <carloga2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 18:22:39 by carloga2          #+#    #+#             */
-/*   Updated: 2025/05/17 18:28:49 by carloga2         ###   ########.fr       */
+/*   Updated: 2025/05/17 18:31:17 by carloga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_printf(char const *format, ...)
-{
-    // Implementation of the ft_printf function
-    // This function will handle formatted output similar to printf
-    // It will take a format string and a variable number of arguments
-    // The implementation details will depend on the specific requirements
-    // and the types of format specifiers you want to support.
+#include "printf.h"
 
-    (void)format; // To avoid unused parameter warning
-    
-    return 0; // Placeholder return value
+/**
+ * @brief Function to print formatted output.
+ * 
+ * @param format The format string.
+ * @param ... The values to format and print.
+ */
+
+int	ft_printf(char const *format, ...)
+{
+	(void)format;
+	return (0);
 }
