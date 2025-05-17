@@ -6,7 +6,7 @@
 /*   By: carloga2 <carloga2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 18:22:56 by carloga2          #+#    #+#             */
-/*   Updated: 2025/05/17 21:02:52 by carloga2         ###   ########.fr       */
+/*   Updated: 2025/05/17 21:06:01 by carloga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ static void	put_char(const char *c)
 {
 	write(1, c, 1);
 }
-
 
 int				format_char(va_list *args);
 int				format_string(va_list *args);
