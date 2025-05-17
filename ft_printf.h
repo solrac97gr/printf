@@ -6,7 +6,7 @@
 /*   By: carloga2 <carloga2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 18:22:56 by carloga2          #+#    #+#             */
-/*   Updated: 2025/05/17 21:23:37 by carloga2         ###   ########.fr       */
+/*   Updated: 2025/05/17 21:25:34 by carloga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #include <stddef.h>
 #include <stdio.h>
 #include <unistd.h>
-
 
 typedef int	(*t_FormatFunc)(va_list *);
 
