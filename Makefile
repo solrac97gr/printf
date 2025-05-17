@@ -6,7 +6,7 @@
 #    By: carloga2 <carloga2@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/17 16:33:12 by carloga2          #+#    #+#              #
-#    Updated: 2025/05/17 18:25:34 by carloga2         ###   ########.fr        #
+#    Updated: 2025/05/17 20:08:55 by carloga2         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,13 +18,15 @@ AR = ar rcs
 RM = rm -f
 
 # Source files
-SRCS = ft_printf.c
+SRCS = ft_printf.c \
+	   ft_format_char.c \
+		
 
 # Object files
 OBJS = $(SRCS:.c=.o)
 
 # Header files
-HEADER = printf.h
+HEADER = ft_printf.h
 
 # Targets
 all: $(NAME)
