@@ -12,6 +12,15 @@
 
 #include "ft_printf.h"
 
+/**
+ * @brief Formats and prints a character.
+ * 
+ * This function retrieves a character from the argument list,
+ * prints it to the standard output, and returns the number of characters printed.
+ * 
+ * @param args A pointer to a va_list containing the arguments.
+ * @return The number of characters printed (always 1 for a single character).
+ */
 int	format_char(va_list *args)
 {
 	char	c;

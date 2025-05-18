@@ -12,6 +12,15 @@
 
 #include "ft_printf.h"
 
+/**
+ * @brief Formats and prints a percent sign.
+ * 
+ * This function prints a percent sign to the standard output
+ * and returns the number of characters printed (always 1).
+ * 
+ * @param args A pointer to a va_list containing the arguments.
+ * @return The number of characters printed (always 1 for a percent sign).
+ */
 int	format_percent(va_list *args)
 {
 	char	c;

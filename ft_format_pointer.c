@@ -12,12 +12,30 @@
 
 #include "ft_printf.h"
 
+/**
+ * @brief Prints a string to the standard output.
+ * 
+ * This function takes a string as input and prints it character by character
+ * 
+ * @param str The string to be printed.
+ */
 static void	put_str(const char *str)
 {
 	while (*str)
 		write(1, str++, 1);
 }
 
+/**
+ * @brief Converts an unsigned long integer to its hexadecimal representation
+ *        and prints it.
+ * 
+ * This function recursively converts the given unsigned long integer to its
+ * hexadecimal representation, printing each digit as it is determined. It
+ * returns the total number of characters printed.
+ * 
+ * @param n The unsigned long integer to be converted and printed.
+ * @return The number of characters printed.
+ */
 static int	put_hex(unsigned long n)
 {
 	int		count;
@@ -35,6 +53,16 @@ static int	put_hex(unsigned long n)
 	return (count);
 }
 
+/**
+ * @brief Formats and prints a pointer address.
+ * 
+ * This function retrieves a pointer from the argument list, converts it to its
+ * hexadecimal representation, and prints it. If the pointer is NULL, it prints
+ * "(nil)". It returns the number of characters printed.
+ * 
+ * @param args A pointer to a va_list containing the arguments.
+ * @return The number of characters printed.
+ */
 int	format_pointer(va_list *args)
 {
 	void			*ptr;

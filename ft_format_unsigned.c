@@ -12,6 +12,16 @@
 
 #include "ft_printf.h"
 
+/**
+ * @brief Converts an unsigned integer to its string representation and prints it.
+ * 
+ * This function recursively converts the given unsigned integer to its string
+ * representation, printing each digit as it is determined. It returns the total
+ * number of characters printed.
+ * 
+ * @param n The unsigned integer to be converted and printed.
+ * @return The number of characters printed.
+ */
 static int	put_unsigned(unsigned int n)
 {
 	int		count;
@@ -26,6 +36,16 @@ static int	put_unsigned(unsigned int n)
 	return (count);
 }
 
+/**
+ * @brief Formats and prints an unsigned integer.
+ * 
+ * This function retrieves an unsigned integer from the argument list,
+ * converts it to its string representation, and prints it. It returns the
+ * number of characters printed.
+ * 
+ * @param args A pointer to a va_list containing the arguments.
+ * @return The number of characters printed.
+ */
 int	format_unsigned(va_list *args)
 {
 	unsigned int	n;
