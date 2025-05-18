@@ -56,5 +56,7 @@ t_FormatFunc get_format_func(char specifier)
         init_format_funcs();
         initialized = 1;
     }
+    if (specifier < 0 || specifier > 255)
+        return NULL;
     return format_funcs[(unsigned char)specifier];
 }
