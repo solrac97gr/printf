@@ -17,13 +17,14 @@
 
 typedef int	(*t_FormatFunc)(va_list *);
 
-void		ft_put_char(const char *c);
-int			format_char(va_list *args);
-int			format_string(va_list *args);
-int			format_pointer(va_list *args);
-int			format_integer(va_list *args);
-int			format_unsigned(va_list *args);
-int			format_hex_lower(va_list *args);
-int			format_hex_upper(va_list *args);
-int			format_percent(va_list *args);
-int			ft_printf(char const *format, ...);
+void		    ft_put_char(const char *c);
+int			    format_char(va_list *args);
+int			    format_string(va_list *args);
+int			    format_pointer(va_list *args);
+int			    format_integer(va_list *args);
+int			    format_unsigned(va_list *args);
+int			    format_hex_lower(va_list *args);
+int			    format_hex_upper(va_list *args);
+int			    format_percent(va_list *args);
+t_FormatFunc    get_format_func(char specifier);
+int			    ft_printf(char const *format, ...);
