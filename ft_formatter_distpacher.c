@@ -12,10 +12,13 @@
 
 #include "ft_printf.h"
 
+// Maximum value for format functions
+#define MAX_FORMAT_FUNC ('x' + 1)
+
 // The format functions array is declared as static to limit its scope
 // to this file. Every case that is not handle is initialized as NULL.
 // Array size is 256 to cover all possible char values
-static t_FormatFunc format_funcs[256] = {
+static t_FormatFunc format_funcs[MAX_FORMAT_FUNC] = {
     ['c'] = format_char,
     ['s'] = format_string,
     ['p'] = format_pointer,
@@ -39,7 +42,7 @@ static t_FormatFunc format_funcs[256] = {
  */
 t_FormatFunc get_format_func(char specifier)
 {
-    if (specifier < 0 || specifier > 255)
+    if (specifier < 0 || specifier >= MAX_FORMAT_FUNC)
         return NULL;
     return format_funcs[(unsigned char)specifier];
 }
