@@ -6,7 +6,7 @@
 /*   By: carloga2 <carloga2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/18 10:04:46 by carloga2          #+#    #+#             */
-/*   Updated: 2025/05/19 18:25:46 by carloga2         ###   ########.fr       */
+/*   Updated: 2025/05/19 18:28:04 by carloga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,6 @@
 
 // Maximum value for format functions (ascii value of 'x')
 #define MAX_FORMAT_FUNC 'x'
-
-// The format functions array is declared as static to limit its scope
-// to this file. Every case that is not handle is initialized as NULL.
-// Array size is x+1 to cover all possible char values
-static t_FormatFunc	g_format_funcs[MAX_FORMAT_FUNC + 1] = {
-['c'] = format_char,
-['s'] = format_string,
-['p'] = format_pointer,
-['d'] = format_integer,
-['i'] = format_integer,
-['u'] = format_unsigned,
-['x'] = format_hex_lower,
-['X'] = format_hex_upper,
-['%'] = format_percent,
-};
 
 /**
 
@@ -44,7 +29,19 @@ static t_FormatFunc	g_format_funcs[MAX_FORMAT_FUNC + 1] = {
  */
 t_FormatFunc	get_format_func(char specifier)
 {
+	static t_FormatFunc	format_funcs[MAX_FORMAT_FUNC + 1] = {
+	['c'] = format_char,
+	['s'] = format_string,
+	['p'] = format_pointer,
+	['d'] = format_integer,
+	['i'] = format_integer,
+	['u'] = format_unsigned,
+	['x'] = format_hex_lower,
+	['X'] = format_hex_upper,
+	['%'] = format_percent,
+	};
+
 	if (specifier < 0 || specifier >= MAX_FORMAT_FUNC + 1)
 		return (NULL);
-	return (g_format_funcs[(unsigned char)specifier]);
+	return (format_funcs[(unsigned char)specifier]);
 }
