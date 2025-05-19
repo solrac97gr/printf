@@ -6,7 +6,7 @@
 /*   By: carloga2 <carloga2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 20:04:46 by carloga2          #+#    #+#             */
-/*   Updated: 2025/05/17 21:24:48 by carloga2         ###   ########.fr       */
+/*   Updated: 2025/05/19 18:14:16 by carloga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static int	put_hex_upper(unsigned int n)
 }
 
 /**
- * @brief Formats and prints an unsigned integer in hexadecimal format (uppercase).
+ * @brief Formats and prints an unsigned integer in hexadecimal format.
  * 
  * This function retrieves an unsigned integer from the argument list,
  * converts it to its hexadecimal representation in uppercase, and prints it.

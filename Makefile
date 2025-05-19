@@ -6,7 +6,7 @@
 #    By: carloga2 <carloga2@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/17 16:33:12 by carloga2          #+#    #+#              #
-#    Updated: 2025/05/17 21:21:40 by carloga2         ###   ########.fr        #
+#    Updated: 2025/05/19 18:24:03 by carloga2         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,6 +28,7 @@ SRCS = ft_printf.c \
 	   ft_format_hex_upper.c \
 	   ft_format_percent.c \
 	   ft_put_char.c \
+	   ft_formatter_distpacher.c \
 		
 
 # Object files

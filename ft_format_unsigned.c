@@ -6,14 +6,15 @@
 /*   By: carloga2 <carloga2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 20:04:46 by carloga2          #+#    #+#             */
-/*   Updated: 2025/05/17 21:24:32 by carloga2         ###   ########.fr       */
+/*   Updated: 2025/05/19 18:14:39 by carloga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
 /**
- * @brief Converts an unsigned integer to its string representation and prints it.
+ * @brief Converts an unsigned integer to its string representation
+ * and prints it.
  * 
  * This function recursively converts the given unsigned integer to its string
  * representation, printing each digit as it is determined. It returns the total

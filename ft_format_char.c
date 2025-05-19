@@ -6,7 +6,7 @@
 /*   By: carloga2 <carloga2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 20:04:46 by carloga2          #+#    #+#             */
-/*   Updated: 2025/05/17 21:23:45 by carloga2         ###   ########.fr       */
+/*   Updated: 2025/05/19 18:14:01 by carloga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@
  * @brief Formats and prints a character.
  * 
  * This function retrieves a character from the argument list,
- * prints it to the standard output, and returns the number of characters printed.
+ * prints it to the standard output, and returns the number of
+ * characters printed.
  * 
  * @param args A pointer to a va_list containing the arguments.
  * @return The number of characters printed (always 1 for a single character).

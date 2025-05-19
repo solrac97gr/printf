@@ -6,21 +6,22 @@
 /*   By: carloga2 <carloga2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 18:22:39 by carloga2          #+#    #+#             */
-/*   Updated: 2025/05/17 21:23:06 by carloga2         ###   ########.fr       */
+/*   Updated: 2025/05/19 18:22:56 by carloga2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-
 /**
  * @brief ft_printf function that formats and prints the given string
- * 	  according to the specified format.
- * 
+ * 		according to the specified format.
+ *
  * format is a string that can contain characters and format specifiers.
- * The format specifiers are preceded by a '%' character. 
- * 
- * @param format The format string containing the characters and format specifiers.
+ * The format specifiers are preceded by a '%' character.
+ *
+
+	* @param format The format string containing the characters
+	and format specifiers.
  * @param ... The values to be formatted and printed.
  * @return The number of characters printed.
  */
@@ -29,7 +30,6 @@ int	ft_printf(char const *format, ...)
 	va_list			args;
 	int				i;
 	int				count;
-	t_FormatFunc	*format_funcs;
 
 	i = 0;
 	count = 0;
