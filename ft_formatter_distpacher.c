@@ -16,7 +16,6 @@
 #define MAX_FORMAT_FUNC 'x'
 
 /**
-
  * @brief Returns the appropriate formatting function based on the specifier.
  *
  * This function takes a character representing a format specifier and returns
