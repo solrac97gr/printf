@@ -14,14 +14,14 @@
 
 /**
  * @brief ft_printf function that formats and prints the given string
- * 		according to the specified format.
+ * according to the specified format.
  *
  * format is a string that can contain characters and format specifiers.
  * The format specifiers are preceded by a '%' character.
  *
 
-	* @param format The format string containing the characters
-	and format specifiers.
+ * @param format The format string containing the characters
+ * and format specifiers.
  * @param ... The values to be formatted and printed.
  * @return The number of characters printed.
  */
@@ -37,9 +37,9 @@ int	ft_printf(char const *format, ...)
 	while (format[i])
 	{
 		if (format[i] == '%' && format[i + 1]
-			&& get_format_func((unsigned char)format[i + 1]))
+			&& get_format_func(format[i + 1]))
 		{
-			count += get_format_func((unsigned char)format[++i])(&args);
+			count += get_format_func(format[++i])(&args);
 		}
 		else
 		{

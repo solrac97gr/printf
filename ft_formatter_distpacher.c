@@ -17,7 +17,7 @@
 
 /**
 
-	* @brief Returns the appropriate formatting function based on the specifier.
+ * @brief Returns the appropriate formatting function based on the specifier.
  *
  * This function takes a character representing a format specifier and returns
  * the corresponding formatting function. If the specifier is not recognized,
@@ -41,7 +41,7 @@ t_FormatFunc	get_format_func(char specifier)
 	['%'] = format_percent,
 	};
 
-	if (specifier < 0 || specifier >= MAX_FORMAT_FUNC + 1)
+	if (specifier < 0 || specifier > MAX_FORMAT_FUNC)
 		return (NULL);
 	return (format_funcs[(unsigned char)specifier]);
 }
